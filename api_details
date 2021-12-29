@@ -1,0 +1,26 @@
+End point at local host = http://127.0.0.1:5000/checkScore
+method allowed = POST
+
+JSON body(Pass list of words with key as 'words').
+Example:
+{
+    "words":["hippo", "jumper", "machinery", "tickets", "tomato", "violin","battery","snow","school"]
+}
+
+Response expected=
+1. If input words are less than 10.
+{
+	"message": "Words less than 10"
+}
+
+2. If input values are not unique:
+{
+	"message": "Duplicates in input words"
+}
+
+3. If input has 10 unique words:
+{
+	"message": "Calculated score 95.13456"
+}
+
+Note: Model will not be loaded until list of words is unique and count is 10 as it is handled by the API method to reduce response time.

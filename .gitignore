@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+venv/
+.python-version
+
+#files to be ignored
+glove.840B.300d.txt
+
+
+
